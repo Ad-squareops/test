@@ -1,0 +1,15 @@
+controller:
+  kind: Deployment
+  service:
+    # annotations:
+    #   kubernetes.io/ingress.global-static-ip-name: "ingress-webapps-ip-name"
+    externalTrafficPolicy: Cluster
+  resources:
+    limits:
+      cpu: 500m
+      memory: 500Mi
+    requests:
+      cpu: 250m 
+      memory: 250Mi
+
+
